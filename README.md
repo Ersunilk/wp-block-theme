@@ -19,4 +19,17 @@ A custom WordPress Block Theme built using Full Site Editing and Gutenberg.
 
 ## 📁 Structure
 
-* te
+* templates/
+* parts/
+* assets/
+* theme.json
+* style.css
+
+## ⚙️ Setup
+
+1. Copy theme to `wp-content/themes/`
+2. Activate from WordPress admin
+
+## 📌 Author
+
+Sunil – WordPress Developer
