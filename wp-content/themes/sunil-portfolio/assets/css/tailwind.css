@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+    background: linear-gradient(90deg, #F6A86E 0%, #F86CA7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-brand {
+    background: linear-gradient(90deg, #F6A86E 0%, #F86CA7 100%);
+}
+
+.letter-spacing-tighter {
+    letter-spacing: -0.05em;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+#navOverlay {
+    transition: transform 0.7s cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+#navOverlay.translate-x-full {
+    transform: translateX(100%);
+}

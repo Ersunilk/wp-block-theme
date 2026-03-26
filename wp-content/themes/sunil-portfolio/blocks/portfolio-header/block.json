@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "sunil-portfolio/portfolio-header",
+    "title": "Portfolio Header",
+    "category": "theme",
+    "description": "Dynamic header with navigation and color controls",
+    "supports": { "html": false },
+    "attributes": {
+        "siteTitle": {
+            "type": "string",
+            "default": "W/A"
+        },
+        "profileSummary": {
+            "type": "string",
+            "default": "Architecting high-performance WordPress ecosystems that bridge the gap between complex backend engineering and Swiss-inspired minimalism."
+        },
+        "bgColor": {
+            "type": "string",
+            "default": "#000000"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "hoverColor": {
+            "type": "string",
+            "default": "#F6A86E"
+        },
+        "navItems": {
+            "type": "array",
+            "default": [
+                { "label": "Home",      "url": "#hero"      },
+                { "label": "Work",      "url": "#work"      },
+                { "label": "Expertise", "url": "#expertise" },
+                { "label": "Resume",    "url": "#cv"        }
+            ]
+        }
+    },
+    "textdomain": "sunil-portfolio",
+    "editorScript": "file:../../build/index.js",
+    "render": "file:./render.php"
+}

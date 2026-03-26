@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "sunil-portfolio/portfolio-hero",
+    "title": "Portfolio Hero",
+    "category": "theme",
+    "description": "Hero section with images, heading and CTA",
+    "supports": { "html": false },
+    "attributes": {
+        "tagline": {
+            "type": "string",
+            "default": "Strategy • Engineering • Design"
+        },
+        "heading1": {
+            "type": "string",
+            "default": "WordPress"
+        },
+        "heading2": {
+            "type": "string",
+            "default": "Solutions"
+        },
+        "heading3": {
+            "type": "string",
+            "default": "Architect"
+        },
+        "paragraph": {
+            "type": "string",
+            "default": "Deploying enterprise-grade technical infrastructures for brands that demand performance without aesthetic compromise."
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Explore Systems"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#work"
+        },
+        "image1Id": {
+            "type": "number",
+            "default": 0
+        },
+        "image1Url": {
+            "type": "string",
+            "default": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800"
+        },
+        "image2Id": {
+            "type": "number",
+            "default": 0
+        },
+        "image2Url": {
+            "type": "string",
+            "default": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400"
+        },
+        "image3Id": {
+            "type": "number",
+            "default": 0
+        },
+        "image3Url": {
+            "type": "string",
+            "default": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400"
+        }
+    },
+    "textdomain": "sunil-portfolio",
+    "editorScript": "file:../../build/index.js",
+    "render": "file:./render.php"
+}

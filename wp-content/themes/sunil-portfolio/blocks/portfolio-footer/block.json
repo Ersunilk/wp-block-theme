@@ -1,0 +1,58 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "sunil-portfolio/portfolio-footer",
+    "title": "Portfolio Footer",
+    "category": "theme",
+    "description": "Dynamic footer with social links and color controls",
+    "supports": { "html": false },
+    "attributes": {
+        "copyrightText": {
+            "type": "string",
+            "default": "© 2025 Sunil Kumar. All Rights Reserved."
+        },
+        "linkedinUrl": {
+            "type": "string",
+            "default": "https://linkedin.com/in/sunilkumar"
+        },
+        "githubUrl": {
+            "type": "string",
+            "default": "https://github.com/Ersunilk"
+        },
+        "dribbbleUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "showLinkedin": {
+            "type": "boolean",
+            "default": true
+        },
+        "showGithub": {
+            "type": "boolean",
+            "default": true
+        },
+        "showDribbble": {
+            "type": "boolean",
+            "default": false
+        },
+        "bgColor": {
+            "type": "string",
+            "default": "#000000"
+        },
+        "textColor": {
+            "type": "string",
+            "default": "#ffffff"
+        },
+        "linkColor": {
+            "type": "string",
+            "default": "#F6A86E"
+        },
+        "fontSize": {
+            "type": "string",
+            "default": "0.75rem"
+        }
+    },
+    "textdomain": "sunil-portfolio",
+    "editorScript": "file:../../build/index.js",
+    "render": "file:./render.php"
+}

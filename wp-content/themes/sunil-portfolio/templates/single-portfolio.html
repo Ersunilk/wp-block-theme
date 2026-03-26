@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">terminal</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">TechCase</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary" href="#">Case Studies</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<button class="bg-primary text-white px-5 py-2 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity">
+                        Contact Us
+                    </button>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[600px] flex items-end">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/40 to-transparent"></div>
+<img alt="Modern Enterprise Dashboard Interface" class="w-full h-full object-cover" data-alt="Digital dashboard with modern data visualizations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjvBO-4GK-UewTUI9r3yJ_XUmSHVVdgju9D5s3Qdatuf1NCtEdlCL0j7ZcP_m7WPL3cw5ZOHgHj6XDmH2oXG6cthVJ-cJBRCCD9LAkRDsttOZ80tHBqIE3eN4FCOtFhstdDJY9iWsusVGRkzTr7pj-auxtKSVsCaYQnAgU8RrEyz-COta9SUKBBnsXgAr2ftqyVUUGJ7kqC5vV-uQw_WC9VZ7KCTqIo6aeFYHdB7IrPZm31x2P2_9N7cq_ZRFYp0Vtdl7EE7J-PQ"/>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 pb-16 w-full">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-4">Enterprise Case Study</span>
+<h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                        Modernizing Enterprise WordPress: A Headless Evolution
+                    </h1>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 text-slate-200">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-sm font-medium">4 Month Timeline</span>
+</div>
+<div class="flex items-center gap-2 text-slate-200">
+<span class="material-symbols-outlined text-primary">category</span>
+<span class="text-sm font-medium">Headless Architecture</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Brief Overview -->
+<section class="py-20 max-w-7xl mx-auto px-4">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8 space-y-12">
+<!-- The Challenge -->
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-2 h-8 bg-primary rounded-full"></div>
+<h2 class="text-3xl font-bold">The Challenge</h2>
+</div>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            The client's legacy WordPress installation suffered from slow load times (Avg. 6.2s) and limited front-end flexibility. Their global marketing team struggled with monolithic templates that hindered SEO performance and failed to scale across multiple regions. Security vulnerabilities in outdated plugins were also a critical risk factor.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+<span class="material-symbols-outlined text-red-500 mb-2">speed</span>
+<h4 class="font-bold mb-1">Slow Time-to-Interactive</h4>
+<p class="text-sm text-slate-500">6.2s average load time leading to high bounce rates.</p>
+</div>
+<div class="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+<span class="material-symbols-outlined text-red-500 mb-2">lock_open</span>
+<h4 class="font-bold mb-1">Security Bottlenecks</h4>
+<p class="text-sm text-slate-500">Legacy plugin dependencies creating critical vulnerabilities.</p>
+</div>
+</div>
+</div>
+<!-- The Solution -->
+<div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-2 h-8 bg-primary rounded-full"></div>
+<h2 class="text-3xl font-bold">The Solution</h2>
+</div>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            We architected a decoupled, <strong>Headless WordPress</strong> solution. We utilized WordPress purely as a Content Management System (CMS) through its REST API, coupled with a high-performance Next.js frontend deployed on Vercel.
+                        </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">api</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Custom GraphQL Middleware</h3>
+<p class="text-slate-600 dark:text-slate-400">Implemented WPGraphQL to optimize data fetching, reducing payload size by 65% compared to standard REST responses.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2">Static Incremental Regeneration</h3>
+<p class="text-slate-600 dark:text-slate-400">Enabled ISR to ensure 99.9% of pages are served as static HTML, providing near-instant loading while maintaining dynamic content updates.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Metadata -->
+<div class="lg:col-span-4">
+<div class="sticky top-24 p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl">
+<h3 class="text-xl font-bold mb-6">Project Stack</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<span class="text-slate-500 font-medium">CMS</span>
+<span class="font-bold">WordPress</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<span class="text-slate-500 font-medium">Frontend</span>
+<span class="font-bold">Next.js / React</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<span class="text-slate-500 font-medium">Styling</span>
+<span class="font-bold">Tailwind CSS</span>
+</div>
+<div class="flex items-center justify-between py-2 border-b border-slate-100 dark:border-slate-800">
+<span class="text-slate-500 font-medium">Infrastructure</span>
+<span class="font-bold">Vercel / AWS</span>
+</div>
+<div class="flex items-center justify-between py-2">
+<span class="text-slate-500 font-medium">API</span>
+<span class="font-bold text-primary">GraphQL</span>
+</div>
+</div>
+<button class="w-full mt-8 bg-slate-900 dark:bg-primary text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                            Download Full Tech PDF
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Results Visualization -->
+<section class="bg-slate-900 py-24 text-white">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-5xl font-bold mb-4">Technical Results</h2>
+<p class="text-slate-400 max-w-2xl mx-auto">Real-world metrics captured 30 days post-launch compared to the legacy system performance benchmarks.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Metric 1 -->
+<div class="p-8 rounded-2xl bg-slate-800 border border-slate-700 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<span class="text-primary font-bold text-sm uppercase tracking-widest">Page Load Time</span>
+<div class="flex items-baseline gap-2 mt-4 mb-2">
+<span class="text-5xl font-extrabold">0.8</span>
+<span class="text-xl text-slate-400">seconds</span>
+</div>
+<div class="flex items-center gap-2 text-emerald-400 text-sm font-bold">
+<span class="material-symbols-outlined">trending_down</span>
+                                87% improvement
+                            </div>
+<div class="mt-6 w-full h-1 bg-slate-700 rounded-full">
+<div class="w-[87%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-8 rounded-2xl bg-slate-800 border border-slate-700 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<span class="text-primary font-bold text-sm uppercase tracking-widest">Core Web Vitals</span>
+<div class="flex items-baseline gap-2 mt-4 mb-2">
+<span class="text-5xl font-extrabold">100</span>
+<span class="text-xl text-slate-400">/ 100</span>
+</div>
+<div class="flex items-center gap-2 text-emerald-400 text-sm font-bold">
+<span class="material-symbols-outlined">verified</span>
+                                Perfect Lighthouse Score
+                            </div>
+<div class="mt-6 w-full h-1 bg-slate-700 rounded-full">
+<div class="w-full h-full bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-8 rounded-2xl bg-slate-800 border border-slate-700 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<span class="text-primary font-bold text-sm uppercase tracking-widest">Conversion Rate</span>
+<div class="flex items-baseline gap-2 mt-4 mb-2">
+<span class="text-5xl font-extrabold">+42</span>
+<span class="text-xl text-slate-400">%</span>
+</div>
+<div class="flex items-center gap-2 text-emerald-400 text-sm font-bold">
+<span class="material-symbols-outlined">trending_up</span>
+                                Attribution to speed
+                            </div>
+<div class="mt-6 w-full h-1 bg-slate-700 rounded-full">
+<div class="w-[42%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Architectual Diagram placeholder/quote -->
+<section class="py-24 max-w-7xl mx-auto px-4">
+<div class="bg-primary/5 rounded-3xl p-12 border border-primary/10 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h2 class="text-3xl font-bold mb-6 leading-tight">Architecture that powers billion-dollar insights</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-8">
+                        The move to a Headless CMS approach allowed us to decouple the content creation cycle from the developer deployment cycle. This resulted in a 3x increase in content velocity for the marketing team.
+                    </p>
+<div class="flex items-center gap-4">
+<img alt="Professional Headshot" class="w-14 h-14 rounded-full object-cover" data-alt="Portrait of a smiling tech lead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAahnT7wBzp_UplHY46lbiMVEoYmgB6UanXSv1caB--1LLmIjm8841OXSpLLHgpqnVet9jq_7D4eJgNCoCenF8MOgIgyBWRDlu-wxOpZO40_kMRXhPclHINOmFhyRAAgGN_pSP9PwxZmcDTE66hKo3YmPYSf2NoFGEtwYBoNeRRvKy4tom825KLCFxyA1YwyWN3y_qr6BCC0uYrmEO6GGoJ0H9LBvDnGqXBbnw4gWNWbNIsLzkXFCu7-wfjyv-mEieqZDR3UbRaQA"/>
+<div>
+<p class="font-bold">Dr. Sarah Chen</p>
+<p class="text-sm text-slate-500">CTO, Enterprise Systems</p>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800">
+<!-- Simple CSS Graphic for Architecture -->
+<div class="flex flex-col items-center gap-6">
+<div class="w-full py-3 px-6 bg-slate-100 dark:bg-slate-800 rounded-lg text-center font-bold border border-dashed border-slate-300">Headless WP (Backend)</div>
+<span class="material-symbols-outlined text-primary rotate-90 md:rotate-0">arrow_forward</span>
+<div class="w-full flex justify-between gap-4">
+<div class="flex-1 py-3 px-4 bg-primary text-white rounded-lg text-center text-xs font-bold">GraphQL API</div>
+<div class="flex-1 py-3 px-4 bg-primary text-white rounded-lg text-center text-xs font-bold">Custom Hooks</div>
+</div>
+<span class="material-symbols-outlined text-primary rotate-90 md:rotate-0">arrow_forward</span>
+<div class="w-full py-3 px-6 bg-slate-900 text-white rounded-lg text-center font-bold">Next.js Edge Runtime</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">terminal</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">TechCase</span>
+</div>
+<p class="text-slate-500 text-sm">Empowering enterprise teams with cutting-edge headless architecture and modern web solutions.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Capabilities</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Headless WordPress</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">API Development</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Performance Audits</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">React Dashboards</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Resources</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Whitepapers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Technical Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Open Source</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-slate-500">© 2024 TechCase Solutions Inc. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-slate-500">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

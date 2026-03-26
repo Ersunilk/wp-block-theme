@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "sunil-portfolio/skills-grid",
+    "title": "Skills Grid",
+    "category": "theme",
+    "description": "Displays skills from database grouped by taxonomy",
+    "supports": { "html": false },
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": "Technical\nEcosystem"
+        },
+        "description": {
+            "type": "string",
+            "default": "Beyond themes and plugins. I build robust, decoupled, and secure WordPress environments designed for modern web performance standards."
+        }
+    },
+    "textdomain": "sunil-portfolio",
+    "editorScript": "file:../../build/index.js",
+    "render": "file:./render.php"
+}
